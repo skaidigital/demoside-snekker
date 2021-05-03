@@ -142,13 +142,13 @@ export const CTABanner = ({ tekstFarge }) => {
         </p>
       </div>
       <div className="flex self-center">
-        <form action="">
-          <div class="flex flex-col lg:flex-row place-items-center my-32 xl:my-0">
+        <form action="" className="">
+          <div className="lg:flex-row lg:flex block my-32 xl:my-0">
             <input
               placeholder="Navn"
               type="text"
               id="navn"
-              className="mb-16 lg:mb-0  bg-mork border-2 border-lys p-8 lg:w-160 w-0100 text-label text-lys ml-4"
+              className="mb-16 lg:mb-0  bg-mork border-2 border-lys p-8 lg:w-160 text-label w-0100 text-lys ml-4"
             />
             <input
               placeholder="Telefon"

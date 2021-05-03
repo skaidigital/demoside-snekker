@@ -6,7 +6,7 @@ export const RatingsHjemmeside = () => {
     <div class="bg-lys py-56">
       <Layout>
         <Grid>
-          <GridItem c="col-span-4 md:col-span-8 lg:col-span-12 flex flex-col lg:flex-row justify-center">
+          <GridItem c="col-span-4 md:col-span-8 lg:col-span-12 flex flex-col md:flex-row justify-center">
             <div class="mb-24">
               <ReviewsGoogle rating="4.8" antall="99" />
             </div>

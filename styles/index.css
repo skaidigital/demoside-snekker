@@ -44,20 +44,41 @@ body {
   background-color: black;
 }
 
-/* .kryss1 {
-  width: 40px;
-  height: 3px;
-  transform: rotate(50deg);
-  background-color: #f9fafe;
+.strek {
+  position: absolute;
+  padding-bottom: 24px;
+  right: 32px;
+  top: 16px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.9;
 }
 
-.kryss2 {
-  width: 40px;
-  height: 3px;
-  transform: rotate(-40deg);
-  background-color: #f9fafe;
-} */
+.fixed-nav {
+  z-index: 200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ddd;
+}
 
+.strek:before,
+.strek:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 3px;
+  transform: rotate(90deg);
+  background-color: #f9fafe;
+}
+.strek:before {
+  margin-top: 10px;
+}
+.strek:after {
+  margin-bottom: 10px;
+}
 .kryss1 {
   position: fixed;
   margin-top: 88px;
