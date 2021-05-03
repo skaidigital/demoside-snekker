@@ -13,7 +13,7 @@ export const HeroTerasse = () => {
 
       <Layout>
         <div class="z-1 relative max-w-740 flex self-center mx-auto ">
-          <h1 className="text-h1 text-hvit text-center">
+          <h1 className="text-h2 lg:text-h1 text-hvit text-center">
             VI BYGGER DIN DRØMMETERASSE
           </h1>
         </div>

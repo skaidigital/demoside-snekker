@@ -44,6 +44,48 @@ body {
   background-color: black;
 }
 
+/* .kryss1 {
+  width: 40px;
+  height: 3px;
+  transform: rotate(50deg);
+  background-color: #f9fafe;
+}
+
+.kryss2 {
+  width: 40px;
+  height: 3px;
+  transform: rotate(-40deg);
+  background-color: #f9fafe;
+} */
+
+.kryss1 {
+  position: fixed;
+  margin-top: 88px;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.9;
+}
+.kryss1:hover {
+  opacity: 1;
+}
+.kryss1:before,
+.kryss1:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: #f9fafe;
+}
+.kryss1:before {
+  transform: rotate(45deg);
+}
+.kryss1:after {
+  transform: rotate(-45deg);
+}
+
 @tailwind components;
 
 @tailwind utilities;
@@ -80,9 +122,22 @@ body {
     @apply text-p;
   }
   a {
-    @apply hover:underline;
   }
   .h-150 {
     height: 150px;
+  }
+  .primaryButton {
+    @apply hover:bg-ctaVar;
+    @apply focus:bg-ctaVar;
+    @apply transition;
+    @apply ease-in-out;
+  }
+  .secondaryButton {
+    @apply hover:bg-lys;
+    @apply hover:text-mork;
+    @apply focus:bg-lys;
+    @apply focus:text-mork;
+    @apply transition;
+    @apply ease-in-out;
   }
 }

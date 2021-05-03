@@ -28,12 +28,16 @@ const Kontaktinfo = () => {
       </div>
       <div class="flex mb-16">
         <div>
-          <a href="tel:(208)232-2458">(208) 232-2458</a>
+          <a href="tel:(208)232-2458" className="hover:underline">
+            (208) 232-2458
+          </a>
         </div>
       </div>
       <div class="flex mb-16">
         <div>
-          <a href="mailto:rotopoke@mail.com">rotopoke@mail.com</a>
+          <a href="mailto:rotopoke@mail.com" className="hover:underline">
+            rotopoke@mail.com
+          </a>
         </div>
       </div>
     </div>
@@ -101,7 +105,7 @@ export const Footer = () => {
                     Nettside lagd av{" "}
                     <a
                       href="https://skaidigital.no"
-                      className="font-semibold text-label"
+                      className="font-semibold text-label hover:underline"
                     >
                       Skai Digital
                     </a>
@@ -109,10 +113,12 @@ export const Footer = () => {
                 </div>
                 <div className="font-medium text-label">
                   <Link href="/sitemap.xml">
-                    <a className="text-label">Sitemap</a>
+                    <a className="text-label hover:underline">Sitemap</a>
                   </Link>
                   <Link href="/personvern">
-                    <a className="ml-32 text-label">Personvern</a>
+                    <a className="ml-32 text-label hover:underline">
+                      Personvern
+                    </a>
                   </Link>
                 </div>
               </div>

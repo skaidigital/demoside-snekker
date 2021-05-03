@@ -93,7 +93,7 @@ export const CheckGruppe = ({ tekst }) => {
 export const ReviewsGoogle = ({ svg, rating, antall }) => {
   return (
     <div class="flex mr-56">
-      <div class="w-120 flex self-center mr-8">
+      <div class="w-96 lg:w-120 flex self-center mr-8">
         <Bilde
           c="object-contain"
           src="demoside-snekker/google-logo_u7hmoe.png"
@@ -103,8 +103,8 @@ export const ReviewsGoogle = ({ svg, rating, antall }) => {
         />
       </div>
       {FemStjerner()}
-      <span className="text-h4 font-medium ml-8">
-        {rating} ({antall})
+      <span className="text-h5 lg:text-h4 flex font-medium ml-8">
+        <div>{rating}</div> <div> ({antall})</div>
       </span>
     </div>
   );
@@ -113,7 +113,7 @@ export const ReviewsGoogle = ({ svg, rating, antall }) => {
 export const ReviewsMittanbud = ({ svg, rating, antall }) => {
   return (
     <div class="flex ">
-      <div class="w-120 flex self-center mr-8">
+      <div class="w-96 lg:w-120 flex self-center mr-8">
         <Bilde
           c="object-contain"
           src="demoside-snekker/mittanbud-logo_ptwgra.png"
@@ -123,7 +123,7 @@ export const ReviewsMittanbud = ({ svg, rating, antall }) => {
         />
       </div>
       {FemStjerner()}
-      <span className="text-h4 font-medium ml-8">
+      <span className="text-h5 lg:text-h4 font-medium ml-8">
         {rating} ({antall})
       </span>
     </div>
@@ -132,35 +132,39 @@ export const ReviewsMittanbud = ({ svg, rating, antall }) => {
 
 export const CTABanner = ({ tekstFarge }) => {
   return (
-    <div className={`flex py-32 text-${tekstFarge} justify-between`}>
+    <div
+      className={`flex flex-col xl:flex-row py-32 text-${tekstFarge} justify-between`}
+    >
       <div>
         <h2 className={`text-h5 text-${tekstFarge}`}>Få et tilbud</h2>
-        <p className="text-label">Request Your Landscape & Fence Quote</p>
+        <p className="text-label">
+          Få et tilbud på <strong>snekkertjenester</strong>
+        </p>
       </div>
-      <div className="">
+      <div className="flex self-center">
         <form action="">
-          <div class="flex place-items-center">
+          <div class="flex flex-col lg:flex-row place-items-center my-32 xl:my-0">
             <input
               placeholder="Navn"
               type="text"
               id="navn"
-              className="bg-mork border-2 border-lys p-8 w-160 text-label text-lys ml-4"
+              className="mb-16 lg:mb-0  bg-mork border-2 border-lys p-8 lg:w-160 w-0100 text-label text-lys ml-4"
             />
             <input
               placeholder="Telefon"
               type="tel"
               id="telefon"
-              className="bg-mork border-2 border-lys p-8 text-lys ml-4 w-160 text-label"
+              className="mb-16 lg:mb-0  bg-mork border-2 border-lys p-8 text-lys ml-4 lg:w-160 w-0100 text-label"
             />
             <input
               placeholder="E-post"
               type="email"
               id="epost"
-              className="bg-mork border-2 border-lys p-8 text-lys ml-4 w-160 text-label"
+              className="mb-16  lg:mb-0 bg-mork border-2 border-lys p-8 text-lys ml-4 lg:w-160 w-0100 text-label"
             />
             <button
               type="submit"
-              className="bg-cta  font-semibold p-8 text-lys ml-4 w-160 text-label flex justify-center border-2 border-cta"
+              className="mb-16 lg:mb-0 primaryButton bg-cta  font-semibold p-8 text-lys ml-4 lg:w-160 w-0100 text-label flex justify-center border-2 border-cta"
             >
               GI MEG ET TILBUD
             </button>
@@ -169,7 +173,7 @@ export const CTABanner = ({ tekstFarge }) => {
       </div>
       <div className="flex flex-col">
         <span className="text-label">Contact us at</span>
-        <a href="tel:(+47)90175235" className="font-semibold text-p">
+        <a href="tel:(+47)90175235" className="font-semibold text-p underline">
           (+47) 901-752-35
         </a>
       </div>

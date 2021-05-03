@@ -11,13 +11,19 @@ export const Header = () => {
           </div>
           <div className="hidden lg:flex">
             <div>
-              <a href="mailto:oslosnekkern@mail.com" className="text-label">
+              <a
+                href="mailto:oslosnekkern@mail.com"
+                className="text-label hover:underline"
+              >
                 E-post:{" "}
                 <span className="font-semibold">oslosnekkern@mail.com</span>
               </a>
             </div>
-            <div className="ml-8">
-              <a href="tel:(+47)90175235" className="text-label">
+            <div className="ml-16">
+              <a
+                href="tel:(+47)90175235"
+                className="text-label hover:underline"
+              >
                 Telefon:{" "}
                 <span className="font-semibold">(+47) 90 17 52 35</span>
               </a>

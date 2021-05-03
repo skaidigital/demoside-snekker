@@ -8,7 +8,7 @@ import { CTABanner } from "../../../2_Store/Grupper";
 export const CTATerasse = () => {
   return (
     <section id="tjenester-cta" className="mt-80">
-      <div class="bg-lys border-2 border-mork">
+      <div class="bg-lys border-t-2 border-mork">
         <Layout>
           <CTABanner tekstFarge="mork" />
         </Layout>

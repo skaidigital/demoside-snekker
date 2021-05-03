@@ -33,7 +33,7 @@ module.exports = {
       mork: "#242F3D",
       lys: "#F9FAFE",
       hvit: "#ffffff",
-      svart: "#00000",
+      svart: "#000000",
     },
     boxShadow: {
       light: "0px 4px 4px rgba(112, 144, 176, 0.1)",
@@ -62,7 +62,9 @@ module.exports = {
       72: "72px",
       80: "80px",
       96: "96px",
+      120: "120px",
       160: "160px",
+      210: "210px",
       240: "240px",
       600: "600px",
       700: "700px",
@@ -87,6 +89,9 @@ module.exports = {
       "0100": "100%",
       auto: "auto",
     },
+    minHeight: {
+      100: "100vh",
+    },
     height: {
       16: "16px",
       18: "18px",
@@ -95,6 +100,7 @@ module.exports = {
       30: "30px",
       32: "32px",
       56: "56px",
+      100: "100vh",
       144: "144px",
       340: "340px",
       "050": "50%",
@@ -150,6 +156,8 @@ module.exports = {
       1: "1",
       2: "2",
       3: "3",
+      200: "200",
+      300: "300",
     },
     variants: {
       extend: {},

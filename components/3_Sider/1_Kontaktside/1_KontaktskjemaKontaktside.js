@@ -189,7 +189,7 @@ export const KontaktskjemaKontaktside = () => {
               <GridItem c="col-span-4 md:col-span-8 lg:col-start-3 bg-cta mt-32">
                 <button
                   type="submit"
-                  className="text-hvit text-p w-0100 py-16 font-semibold"
+                  className="text-hvit text-p w-0100 py-16 font-semibold primaryButton"
                 >
                   SEND MELDING
                 </button>

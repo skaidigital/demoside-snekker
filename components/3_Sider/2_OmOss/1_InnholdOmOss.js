@@ -12,7 +12,7 @@ export const InnholdOmOss = () => {
   return (
     <HeroContainer id="om-oss">
       <Layout>
-        <div class="mb-80">
+        <div class="mb-24 lg:mb-80">
           <Grid>
             <GridItem c="col-span-4 md:col-span-8 lg:col-span-6 mb-16">
               <h2 className="text-h2 text-cta mb-8">Om oss</h2>

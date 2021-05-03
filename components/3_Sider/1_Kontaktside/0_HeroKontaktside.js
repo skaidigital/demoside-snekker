@@ -12,8 +12,8 @@ export const HeroKontaktside = () => {
       />
 
       <Layout>
-        <div class="z-1 relative max-w-740 flex self-center mx-auto ">
-          <h1 className="text-h1 text-hvit text-center">
+        <div class="z-1 relative max-w-740 h-screen flex self-center m-auto ">
+          <h1 className="text-h2 lg:text-h1 text-hvit text-center">
             LA OSS BYGGE DITT DRØMMEPROSJEKT
           </h1>
         </div>

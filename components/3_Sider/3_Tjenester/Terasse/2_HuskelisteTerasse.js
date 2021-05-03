@@ -21,7 +21,7 @@ export const HuskelisteTerasse = () => {
               <CheckGruppe tekst="​Skal du ha et badebasseng eller boblebad? Husk ekstra fundamentering under." />
             </ul>
           </GridItem>
-          <GridItem c="col-span-2 md:col-span-4 lg:col-start-3 h-304 grid justify-items-stretch">
+          <GridItem c="col-span-4 lg:col-start-3 h-304 grid justify-items-stretch">
             <Bilde
               c="object-cover"
               src="demoside-snekker/daniela-gisin-krumsick-VtO6A-I3piU-unsplash_rjc0dl.jpg"
@@ -30,7 +30,7 @@ export const HuskelisteTerasse = () => {
               h={2134}
             />
           </GridItem>
-          <GridItem c="col-span-2 md:col-span-4 lg:col-start-7 h-304 grid justify-items-stretch">
+          <GridItem c="col-span-4 lg:col-start-7 h-304 grid justify-items-stretch">
             <Bilde
               c="object-cover"
               src="demoside-snekker/greyson-joralemon-A1g0oeX29ec-unsplash_pblshm.jpg"
@@ -39,7 +39,7 @@ export const HuskelisteTerasse = () => {
               h={1799}
             />
           </GridItem>
-          <GridItem c="col-span-2 md:col-span-4 lg:col-start-3 h-304 grid justify-items-stretch">
+          <GridItem c="col-span-4 lg:col-start-3 h-304 grid justify-items-stretch">
             <Bilde
               c="object-cover"
               src="demoside-snekker/jens-behrmann-Iy3OdKaszJs-unsplash_munmkd.jpg"
@@ -48,7 +48,7 @@ export const HuskelisteTerasse = () => {
               h={2119}
             />
           </GridItem>
-          <GridItem c="col-span-2 md:col-span-4 lg:col-start-7 h-304 grid justify-items-stretch">
+          <GridItem c="col-span-4 lg:col-start-7 h-304 grid justify-items-stretch">
             <Bilde
               c="object-cover"
               src="demoside-snekker/thayran-melo-iCnKeuwwPPw-unsplash_fertzm.jpg"

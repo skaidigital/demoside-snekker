@@ -1,4 +1,10 @@
-import { Grid, GridItem, Layout, SectionContainer } from "../../1_Små/Base";
+import {
+  Grid,
+  GridItem,
+  HeroContainer,
+  Layout,
+  SectionContainer,
+} from "../../1_Små/Base";
 
 const Stjerne = (
   <svg
@@ -102,7 +108,7 @@ const Grunner = [
 
 export const HvorforVelgeHjemmeside = () => {
   return (
-    <SectionContainer id="hvorfor-velge-oslo-snekkern">
+    <HeroContainer id="hvorfor-velge-oslo-snekkern">
       <Layout>
         <h2 class="text-h1 text-center text-mork mb-56">
           Hvorfor velge Oslo Snekker'n?
@@ -111,9 +117,9 @@ export const HvorforVelgeHjemmeside = () => {
           {Grunner.map(({ svg, heading, brodtekst }) => {
             return (
               <GridItem c="col-span-4 lg:col-span-3">
-                <div>
+                <div className="mb-32">
                   <div className="mb-16">{svg}</div>
-                  <h3 className="mb-16">{heading}</h3>
+                  <h3 className="mb-8">{heading}</h3>
                   <p>{brodtekst}</p>
                 </div>
               </GridItem>
@@ -121,6 +127,6 @@ export const HvorforVelgeHjemmeside = () => {
           })}
         </Grid>
       </Layout>
-    </SectionContainer>
+    </HeroContainer>
   );
 };

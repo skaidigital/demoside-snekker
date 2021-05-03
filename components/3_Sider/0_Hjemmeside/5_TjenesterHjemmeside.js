@@ -1,4 +1,10 @@
-import { Grid, GridItem, Layout, SectionContainer } from "../../1_Små/Base";
+import {
+  Grid,
+  GridItem,
+  HeroContainer,
+  Layout,
+  SectionContainer,
+} from "../../1_Små/Base";
 import { Bilde } from "../../1_Små/Bilde";
 import { MainButton, SecondaryButton } from "../../1_Små/Knapper";
 import { CheckGruppe } from "../../2_Store/Grupper";
@@ -21,7 +27,7 @@ const Høyreside = [
 
 export const TjenesterHjemmeside = () => {
   return (
-    <SectionContainer id="tjenester">
+    <HeroContainer id="tjenester">
       <Layout>
         <Grid>
           <GridItem c="col-span-4 md:col-span-8 lg:col-span-12 mb-32">
@@ -29,21 +35,21 @@ export const TjenesterHjemmeside = () => {
               Våre tjenester inkluderer
             </h2>
           </GridItem>
-          <GridItem c="col-span-4 lg:col-span-3 lg:col-start-4">
+          <GridItem c="ml-24 lg:ml-0 col-span-4 lg:col-span-3 lg:col-start-4">
             <ul>
               {Venstreside.map((e) => {
                 return <CheckGruppe tekst={e} />;
               })}
             </ul>
           </GridItem>
-          <GridItem c="col-span-4 lg:col-span-3 lg:col-start-7 mb-32">
+          <GridItem c="ml-24 lg:ml-0 col-span-4 lg:col-span-3 lg:col-start-7 mb-32">
             <ul>
               {Høyreside.map((e) => {
                 return <CheckGruppe tekst={e} />;
               })}
             </ul>
           </GridItem>
-          <GridItem c="col-span-4 lg:col-span-5 lg:col-start-2 mb-56 grid justify-items-stretch">
+          <GridItem c="col-span-4 lg:col-span-5 lg:col-start-2 md:mb-56 grid justify-items-stretch">
             <Bilde
               src="demoside-snekker/annie-gray-WEWTGkPUVT0-unsplash_dkjzqq.jpg"
               alt="To snekre som skjærer ved"
@@ -51,7 +57,7 @@ export const TjenesterHjemmeside = () => {
               h={2133}
             />
           </GridItem>
-          <GridItem c="col-span-4 lg:col-span-5 lg:col-start-7 grid justify-items-stretch mb-56">
+          <GridItem c="col-span-4 lg:col-span-5 lg:col-start-7 grid justify-items-stretch md:mb-56 mb-32">
             <Bilde
               src="demoside-snekker/jens-behrmann-Iy3OdKaszJs-unsplash_munmkd.jpg"
               alt="Tre snekre som bygger vegg"
@@ -61,7 +67,7 @@ export const TjenesterHjemmeside = () => {
           </GridItem>
         </Grid>
         <Grid>
-          <GridItem c="col-span-4 md:col-span-8 lg:col-span-8 lg:col-start-3 mb-32">
+          <GridItem c="col-span-4 md:col-span-8 lg:col-span-8 lg:col-start-3 ">
             <p>
               We perform extensive on-site evaluations and design personalized
               accsesibility oslutions for problematic areas in your home or
@@ -83,15 +89,15 @@ export const TjenesterHjemmeside = () => {
             </p>
           </GridItem>
         </Grid>
-        <div className="flex justify-center">
-          <div class="mr-4">
+        <div className="flex flex-col md:flex-row justify-center">
+          <div class="md:mr-4 mb-16 md:mb-0">
             <MainButton tekst="Få et gratis tilbud" href="" />
           </div>
-          <div class="ml-4">
+          <div class="md:ml-4">
             <SecondaryButton tekst="les om våre tjenester" href="" />
           </div>
         </div>
       </Layout>
-    </SectionContainer>
+    </HeroContainer>
   );
 };
