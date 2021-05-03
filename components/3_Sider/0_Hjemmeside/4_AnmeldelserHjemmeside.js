@@ -6,7 +6,7 @@ export const AnmeldelserHjemmeside = () => {
   return (
     <SectionContainer id="reviews">
       <Layout>
-        <h2 className="text-h1 text-mork text-center mb-8">Fornøyde kunder</h2>
+        <h2 className="text-h1 text-mork text-center mb-56">Fornøyde kunder</h2>
         <Grid>
           <GridItem c="col-span-4 lg:col-span-5 lg:col-start-2">
             <ReviewKort

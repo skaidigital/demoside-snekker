@@ -1,5 +1,5 @@
 export const SectionContainer = ({ children, id, farge, pt }) => {
-  const klassenavn = `bg-${farge} mx-auto align-center py-80 `;
+  const klassenavn = `bg-${farge} mx-auto align-center py-80 md:py-120 lg:py-160 `;
   return (
     <section id={id} className={klassenavn}>
       {children}

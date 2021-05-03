@@ -11,7 +11,7 @@ export const CTAHjemmeside = () => {
     <>
       <div className="bg-mork ">
         <Layout>
-          <CTABanner />
+          <CTABanner tekstFarge="lys" />
         </Layout>
       </div>
     </>

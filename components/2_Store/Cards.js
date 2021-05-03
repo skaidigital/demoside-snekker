@@ -14,16 +14,16 @@ export const FireBilder = ({ src, alt, w, h }) => {
 
 export const ReviewKort = ({ initial, navn, lengeSiden, brodtekst }) => {
   return (
-    <div class="bg-lys flex flex-row p-16 mt-8">
+    <div class="bg-lys flex flex-row p-16 mt-24">
       <div>
-        <div class="w-16 font-semibold mb-2">
-          <span className="p-4 bg-ctaDus rounded-full">{initial}</span>
+        <div className="font-semibold p-8 mr-16 bg-ctaDus rounded-circle">
+          <p class="px-8">{initial}</p>
         </div>
       </div>
       <div>
-        <h3 class="text-h5 font-semibold mb-2">{navn}</h3>
-        <div className="text-label mb-2">{lengeSiden}</div>
-        <div class="mb-4">
+        <h3 class="text-h5 font-semibold mb-8">{navn}</h3>
+        <div className="text-label mb-8">{lengeSiden}</div>
+        <div class="mb-16">
           <FemStjernerSmå />
         </div>
         <p>{brodtekst}</p>

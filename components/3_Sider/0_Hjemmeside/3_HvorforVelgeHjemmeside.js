@@ -104,16 +104,16 @@ export const HvorforVelgeHjemmeside = () => {
   return (
     <SectionContainer id="hvorfor-velge-oslo-snekkern">
       <Layout>
-        <h2 class="text-h1 text-center text-mork mb-24">
-          Hvofor velge Oslo Snekker'n?
+        <h2 class="text-h1 text-center text-mork mb-56">
+          Hvorfor velge Oslo Snekker'n?
         </h2>
         <Grid>
           {Grunner.map(({ svg, heading, brodtekst }) => {
             return (
               <GridItem c="col-span-4 lg:col-span-3">
                 <div>
-                  <div className="mb-4">{svg}</div>
-                  <h3 className="mb-4">{heading}</h3>
+                  <div className="mb-16">{svg}</div>
+                  <h3 className="mb-16">{heading}</h3>
                   <p>{brodtekst}</p>
                 </div>
               </GridItem>

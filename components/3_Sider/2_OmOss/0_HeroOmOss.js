@@ -8,7 +8,7 @@ import { Bilde } from "../../1_Små/Bilde";
 
 export const HeroOmOss = () => {
   return (
-    <HeroContainer id="hero-display" c="z-1 h-150 relative bgImage">
+    <HeroContainer id="hero-display" c="z-1 h-340 relative bgImage">
       <Bilde
         c="object-cover"
         src="demoside-snekker/thayran-melo-iCnKeuwwPPw-unsplash_fertzm.jpg"
@@ -17,8 +17,8 @@ export const HeroOmOss = () => {
       />
 
       <Layout>
-        <div class="z-1 relative">
-          <h1 className="text-h1 text-hvit text-center max-w-520">
+        <div class="z-1 relative max-w-740 flex self-center mx-auto ">
+          <h1 className="text-h1 text-hvit text-center">
             VI ER OSLOS MEST ANERKJENTE SNEKRE
           </h1>
         </div>

@@ -14,18 +14,28 @@ export const HeroHjemmeside = () => {
       />
       <Layout>
         <div class="relative z-1">
-          <div class="text-center flex justify-center flex-col ">
-            <h5>SNEKKER I OSLO SENTRUM</h5>
-            <h1>PREMIERE LANDSCAPING AND FENCING IN EASTER IDAHO</h1>
-            <p>
+          <div class="text-center m-auto max-w-740">
+            <h5 className="mb-8 mt-96">SNEKKER I OSLO SENTRUM</h5>
+            <h1 className="mb-8">
+              PREMIERE LANDSCAPING AND FENCING IN EASTERN IDAHO
+            </h1>
+            <p className="mb-32">
               Let’s bring your vision to life with a free consultation and
               planning call. It’s on us!
             </p>
+            <div className="flex justify-center mt-32">
+              <div class="mr-8">
+                <MainButton tekst="Få et gratis tilbud" href="/" />
+              </div>
+              <div class="ml-8">
+                <SecondaryButton
+                  tekst="Les om våre tjenester"
+                  href="/"
+                  farge="lys"
+                />
+              </div>
+            </div>
           </div>
-          {/* <div className="">
-            <MainButton tekst="Få et gratis tilbud" href="/" />
-            <SecondaryButton tekst="Les om våre tjenester" href="/" />
-          </div> */}
         </div>
       </Layout>
     </HeroContainer>

@@ -13,7 +13,7 @@ export const HomePage = () => {
       <NextSeo title="" description="" />
       <Header />
       <Navbar />
-      {/* <HeroTerasse /> */}
+      <HeroTerasse />
       <IntroTerasse />
       <HuskelisteTerasse />
       <CTATerasse />

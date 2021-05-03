@@ -65,7 +65,7 @@ export const FemStjernerSmå = () => {
 export const CheckGruppe = ({ tekst }) => {
   return (
     <div className="flex">
-      <div className="mr-4 mt-1 ">
+      <div className="mr-16 mt-4 ">
         <svg
           className="inline-block "
           width="24"
@@ -85,16 +85,17 @@ export const CheckGruppe = ({ tekst }) => {
           ></path>
         </svg>
       </div>
-      <li className="text-p mb-4">{tekst}</li>
+      <li className="text-p mb-16">{tekst}</li>
     </div>
   );
 };
 
 export const ReviewsGoogle = ({ svg, rating, antall }) => {
   return (
-    <div class="flex ">
-      <div class="w-24 flex self-center mr-4">
+    <div class="flex mr-56">
+      <div class="w-120 flex self-center mr-8">
         <Bilde
+          c="object-contain"
           src="demoside-snekker/google-logo_u7hmoe.png"
           alt="Google logo"
           w={1024}
@@ -102,7 +103,7 @@ export const ReviewsGoogle = ({ svg, rating, antall }) => {
         />
       </div>
       {FemStjerner()}
-      <span className="text-h4 font-medium ml-2">
+      <span className="text-h4 font-medium ml-8">
         {rating} ({antall})
       </span>
     </div>
@@ -112,9 +113,9 @@ export const ReviewsGoogle = ({ svg, rating, antall }) => {
 export const ReviewsMittanbud = ({ svg, rating, antall }) => {
   return (
     <div class="flex ">
-      <div class="w-40 h-8 flex self-center mr-4">
+      <div class="w-120 flex self-center mr-8">
         <Bilde
-          c="object-fit"
+          c="object-contain"
           src="demoside-snekker/mittanbud-logo_ptwgra.png"
           alt="Mittanbud"
           w={1024}
@@ -122,46 +123,48 @@ export const ReviewsMittanbud = ({ svg, rating, antall }) => {
         />
       </div>
       {FemStjerner()}
-      <span className="text-h4 font-medium ml-2">
+      <span className="text-h4 font-medium ml-8">
         {rating} ({antall})
       </span>
     </div>
   );
 };
 
-export const CTABanner = () => {
+export const CTABanner = ({ tekstFarge }) => {
   return (
-    <div className="flex py-8 text-lys justify-between">
+    <div className={`flex py-32 text-${tekstFarge} justify-between`}>
       <div>
-        <h2 className="text-h5 text-lys">Få et tilbud</h2>
+        <h2 className={`text-h5 text-${tekstFarge}`}>Få et tilbud</h2>
         <p className="text-label">Request Your Landscape & Fence Quote</p>
       </div>
       <div className="">
         <form action="">
-          <input
-            placeholder="Navn"
-            type="text"
-            id="navn"
-            className="bg-mork border-2 border-lys p-2 text-lys ml-2"
-          />
-          <input
-            placeholder="Telefon"
-            type="tel"
-            id="telefon"
-            className="bg-mork border-2 border-lys p-2 text-lys ml-2"
-          />
-          <input
-            placeholder="E-post"
-            type="email"
-            id="epost"
-            className="bg-mork border-2 border-lys p-2 text-lys ml-2"
-          />
-          <button
-            type="submit"
-            className="bg-cta font-semibold p-2 text-lys ml-4"
-          >
-            GI MEG ET TILBUD
-          </button>
+          <div class="flex place-items-center">
+            <input
+              placeholder="Navn"
+              type="text"
+              id="navn"
+              className="bg-mork border-2 border-lys p-8 w-160 text-label text-lys ml-4"
+            />
+            <input
+              placeholder="Telefon"
+              type="tel"
+              id="telefon"
+              className="bg-mork border-2 border-lys p-8 text-lys ml-4 w-160 text-label"
+            />
+            <input
+              placeholder="E-post"
+              type="email"
+              id="epost"
+              className="bg-mork border-2 border-lys p-8 text-lys ml-4 w-160 text-label"
+            />
+            <button
+              type="submit"
+              className="bg-cta  font-semibold p-8 text-lys ml-4 w-160 text-label flex justify-center border-2 border-cta"
+            >
+              GI MEG ET TILBUD
+            </button>
+          </div>
         </form>
       </div>
       <div className="flex flex-col">
