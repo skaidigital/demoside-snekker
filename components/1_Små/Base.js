@@ -1,3 +1,26 @@
+import Image from "next/image";
+
+const myLoader = ({ src, width, quality }) => {
+  return `https://res.cloudinary.com/skai-digital/image/upload/q_auto/${src}`;
+};
+
+export const Bilde = ({ src, alt, w, h, c, layout }) => {
+  return (
+    <Image
+      className={c}
+      src={src}
+      alt={alt}
+      width={w}
+      height={h}
+      loader={myLoader}
+      layout={layout}
+    />
+  );
+};
+
+// **
+// **Containers and sections
+// **
 export const SectionContainer = ({ children, id, farge, pt }) => {
   const klassenavn = `bg-${farge} mx-auto align-center py-80 md:py-120 lg:py-160 `;
   return (
@@ -6,14 +29,9 @@ export const SectionContainer = ({ children, id, farge, pt }) => {
     </section>
   );
 };
-// md:py-120 lg:py-160
 export const Section1 = ({ children, id, farge, pt }) => {
   const klassenavn = `bg-${farge} mx-auto align-center pt-40`;
-  return (
-    <section id={id} className={klassenavn}>
-      {children}
-    </section>
-  );
+  return <section id={id} className={klassenavn}></section>;
 };
 
 export const HeroContainer = ({ children, id, farge, pt, c }) => {
