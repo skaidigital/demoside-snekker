@@ -1,4 +1,6 @@
 import Link from "next/link";
+import React, { useRef } from "react";
+import { useOutsideClick } from "../1_Små/Hooks";
 
 const Tjenester = [
   { navn: "Oppussing", href: "/tjenester/terasse" },

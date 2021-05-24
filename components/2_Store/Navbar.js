@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { Layout } from "../1_Små/Base";
-import { useState } from "react";
+import React, { useState, useRef } from "react";
 import { CTAModal } from "./Modal";
 import { Dropdown } from "./Dropdown";
+import { useOutsideClick } from "../1_Små/Hooks";
 
 const Navigasjon = [
   { navn: "Hjem", href: "/" },
@@ -32,6 +33,11 @@ export const Navbar = () => {
   const [showModal, setShowModal] = useState(false);
   const [showDesktop, setShowDesktop] = useState(false);
   const [showMobilenav, setShowMobilenav] = useState(false);
+  const ref = useRef();
+
+  useOutsideClick(ref, () => {
+    openDropdown();
+  });
 
   const openModal = () => {
     setShowModal((prev) => !prev);
@@ -59,12 +65,12 @@ export const Navbar = () => {
                 </Link>
               </span>
             </div>
-            <div className="flex self-center">
+            <div className="flex self-center" ref={ref}>
               {mapNavigasjon()}
               <Link href="">
                 <a
                   className="flex self-center  mr-24 hover:underline"
-                  onClick={openDropdown}
+                  onClick={() => openDropdown()}
                 >
                   Tjenester
                 </a>
